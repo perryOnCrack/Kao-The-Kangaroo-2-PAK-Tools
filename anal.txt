@@ -1,5 +1,0 @@
-9e 00 00 00 -> 158        2      chunks =  256       bytes
-2c 80 00 00 -> 32812      257    chunks =  32896     bytes
-e6 a3 01 00 -> 107494     840    chunks =  107520    bytes
-38 04 02 00 -> 132152     1083   chunks =  138624    bytes
-05 bc b9 00 -> 12172293   95097  chunks =  12172416  bytes
