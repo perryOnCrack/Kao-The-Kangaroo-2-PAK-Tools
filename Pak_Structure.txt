@@ -1,0 +1,23 @@
+*1 chunk = 128 bytes
+
+PAK file
+|
++--Header (1 chunk)
+|
++--File_1
+|  |
+|  +--Table (1 chunk)
+|  |  |
+|  |  +--"item" (4 bytes)
+|  |  |
+|  |  +--file size (4 bytes)
+|  |  |
+|  |  +--# of file (8 bytes)
+|  |  |
+|  |  +--Path (112 bytes)
+|  |
+|  +--Actual file (n chunks)
+|
++--File_2
+|
+|...
