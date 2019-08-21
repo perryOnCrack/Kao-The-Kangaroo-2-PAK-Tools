@@ -12,6 +12,10 @@ chunk_size = 128
 
 open_path = sys.argv[1].replace('\\', '/')
 open_dir = open_path.rsplit('/', 1)[0]
+if open_dir == open_path:
+    open_dir = ''
+else:
+    open_dir += '/'
 
 with open(open_path, 'rb') as f:
     # Pak file header chunk.
@@ -44,7 +48,7 @@ with open(open_path, 'rb') as f:
                 print(str(size) + ' bytes')
                 
                 # Get the string used in open().
-                full_path = open_dir + '/' + folder_path + '/' + file_path
+                full_path = open_dir + folder_path + '/' + file_path
 
                 # Create a folder for the file.
                 NewFolder(full_path.rsplit('/', 1)[0])
