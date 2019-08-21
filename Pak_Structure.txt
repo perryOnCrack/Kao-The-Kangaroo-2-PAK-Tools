@@ -1,4 +1,7 @@
-*1 chunk = 128 bytes
+1 chunk = 128 bytes
+
+For some reasons there are some empty space between some files, they might be files deleted by the developers.
+The files are not compressed or encrypted at all.
 
 PAK file
 |
@@ -14,7 +17,7 @@ PAK file
 |  |  |
 |  |  +--# of file (8 bytes)
 |  |  |
-|  |  +--Path (112 bytes)
+|  |  +--Path (rest of the bytes)
 |  |
 |  +--Actual file (n chunks)
 |
